@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "TYPESCRIPT",
+			"path": "../TYPESCRIPT"
+		},
+		{
+			"name": "PLAYWRIGHT",
+			"path": "."
+		},
+		{
+			"path": "../PLAYWRIGHT - ADVANCED FEATURES"
+		}
+	],
+	"settings": {}
+}
