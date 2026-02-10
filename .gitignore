@@ -8,4 +8,10 @@ node_modules/
 /playwright/.auth/
 *.log
 .env
-allure-results/
+/allure-results/
+
+
+
+
+
+
