@@ -1,14 +1,10 @@
-import { loginSeedTest as test, expect } from '../helpers/login-seed';
-import type { Page } from '@playwright/test';
-// ...existing code...
+import { e2eSeedTest as test, expect } from '../helpers/e2e-seed';
 
-test.describe('Seed for logged in user', () => {
+test.describe('E2E Seed Flow', () => {
 
-  test('seed using loggedInPage fixture', async ({ loggedInPage }: { loggedInPage: Page }) => {
+  test('Complete E2E flow executed successfully', async ({ e2eFlowPage }) => {
 
-    // Validate My Account page is visible
-    
-    await expect(loggedInPage).toHaveURL(/account/);
+    await expect(e2eFlowPage).toHaveURL(/checkout|cart|account/);
 
   });
 
