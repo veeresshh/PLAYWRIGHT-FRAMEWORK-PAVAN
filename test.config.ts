@@ -7,8 +7,8 @@ export class TestConfig{
   
     //Valid Login Credentials
 
-    Email="pavanol@abc.com"
-    Password="test@123"
+    Email="veeresshh@yopmail.com"
+    Password="Abcd@123"
 
     //Product Details
 

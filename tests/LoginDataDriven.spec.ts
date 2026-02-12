@@ -1,14 +1,14 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { MyAccountPage } from '../pages/MyAccountPage';
-import { DataProvider } from '../utils/dataProvider';
+import { DataProvider } from '../utils/DataProvider';
 import { TestConfig } from '../test.config';
 import { HomePage } from '../pages/HomePage';
 
 
 //Load JSON Test Data logindata.json
 
-const JsonPath = "tests/testdata/LoginData.json";
+const JsonPath = "testdata/LoginData.json";
 const JsonTestData = DataProvider.GetTestDataFromJson(JsonPath);
 
 
@@ -48,7 +48,7 @@ for (const Data of JsonTestData) {
 
 //Load CSV Test Data logindata.csv
 
-const CSVPath = "tests/testdata/LoginData.csv";
+const CSVPath = "testdata/LoginData.csv";
 const CSVTestData = DataProvider.GetTestDataFromCSV(CSVPath);
 
 
