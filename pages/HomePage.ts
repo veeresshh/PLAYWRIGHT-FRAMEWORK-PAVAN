@@ -15,11 +15,11 @@ export class HomePage {
 
         this.page = page;
         
-        this.MyAccountLink = page.locator('span:has-text("My Account")');
-        this.RegisterLink = page.locator('a:has-text("Register")');
-        this.LoginLink = page.locator('a:has-text("Login")');
-        this.SearchBox = page.locator('input[placeholder="Search"]');
-        this.SearchButton = page.locator('#search button[type="button"]');
+        this.MyAccountLink = page.locator('span:has-text("My Account")').describe('My Account Link');
+        this.RegisterLink = page.locator('a:has-text("Register")').describe('Register Link');
+        this.LoginLink = page.locator('a:has-text("Login")').describe('Login Link');
+        this.SearchBox = page.locator('input[placeholder="Search"]').describe('Search Box');
+        this.SearchButton = page.locator('#search button[type="button"]').describe('Search Button');
     }
 
     // Check if HomePage exists
