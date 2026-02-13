@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { title } from 'process';
 
 export default defineConfig({
 
@@ -9,7 +10,7 @@ export default defineConfig({
   workers: 1,
 
   reporter: [
-    ['html'],
+    ['html', {title: 'Playwright Test Report'}],
     ['allure-playwright'],
     ['list']
   ],
