@@ -38,7 +38,16 @@ test.afterEach(async ({ page }) => {
 });
 
 
-test('User login test',{ tag: ['@master', '@sanity', '@regression'] },async()=>{
+test(
+  'User login test',
+  {
+    tag: ['@master', '@sanity', '@regression'],
+    annotation: [
+      { type: 'GitHub Link', 
+        description: 'https://github.com/veeresshh/PLAYWRIGHT-FRAMEWORK-PAVAN/blob/master/tests/Login.spec.ts' }
+    ]
+  },
+  async ({ page }) => {
 
     //Navigate to Login page via Home page
 
