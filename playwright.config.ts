@@ -10,7 +10,7 @@ export default defineConfig({
   workers: 1,
 
   reporter: [
-    ['html', {title: 'Playwright Test Report'}],
+    ['html', {title: 'Playwright Test Execution Report'}],
     ['allure-playwright'],
     ['list']
   ],
